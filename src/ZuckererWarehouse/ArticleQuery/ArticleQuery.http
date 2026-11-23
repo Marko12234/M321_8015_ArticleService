@@ -1,0 +1,6 @@
+@ArticleQuery_HostAddress = http://localhost:5006
+
+GET {{ArticleQuery_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
