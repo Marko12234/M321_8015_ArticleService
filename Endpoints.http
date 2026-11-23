@@ -1,0 +1,29 @@
+@Article_HostAddress = http://localhost:8080/api/article
+
+GET {{Article_HostAddress}}/queries/GetAllArticles
+Accept: application/json
+
+###
+
+GET {{Article_HostAddress}}/queries/GetArticleById/6643e036-52f6-4391-95c4-6e230b668859
+Accept: application/json
+
+###
+
+POST {{Article_HostAddress}}/commands/AddArticle
+Accept: application/json
+Content-Type: application/json
+
+{
+  "Title": "Keyboard"
+}
+
+###
+
+POST {{Article_HostAddress}}/commands/UpdateArticle/5bcf3cad-c34d-43e4-91d6-32c6938b4cca
+Accept: application/json
+Content-Type: application/json
+
+{
+  "Title": "Fahrrad"
+}
